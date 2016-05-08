@@ -1,6 +1,6 @@
 # Nitrogen plugin for [Font Awesome](http://fontawesome.io/)
 
-A quick way to include font-awesome incons into nitrogen; small record name; not need to specificially state that aria hidden etc. 
+A quick way to include font-awesome incons into nitrogen; small record name; assumes to add "fa fa-"; and no need to specificially state that aria hidden etc. 
 
 This creates a `#fa{}` element for [Nitrogen Web Framework](http://nitrogenproject.com) 
 
@@ -47,5 +47,6 @@ You specify an element like below
 There are many additional settings such as sizes/combining with buttons; or using with bootstrap that maybe found at [Fontawesume examples](https://fortawesome.github.io/Font-Awesome/examples/)
 
 
-*TODO
--[ ] A lot better example is needed. Currently not displaying as hoping.
+## TODO
+
+-[ ] A lot better example/demo page is needed. Currently not displaying as hoping.
