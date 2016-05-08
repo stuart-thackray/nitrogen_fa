@@ -2,6 +2,8 @@
 
 A quick way to include font-awesome incons into nitrogen; small record name; not need to specificially state that aria hidden etc. 
 
+This creates a `#fa{}` element for [Nitrogen Web Framework](http://nitrogenproject.com) 
+
 ## Installing into a Nitrogen Applicatio
 
 Add it as a rebar dependency by adding into the deps section of rebar.config:
@@ -35,6 +37,11 @@ Basic example is provide at
 http:\\<YOURIP>:<YOURPORT>\fa_demo
 OR JUST 
 http://localhost:8000/fa_demo if running locally.
+```
+
+You specify an element like below
+```erlang
+#fa{fa="camera-retro"}
 ```
 
 There are many additional settings such as sizes/combining with buttons; or using with bootstrap that maybe found at [Fontawesume examples](https://fortawesome.github.io/Font-Awesome/examples/)
