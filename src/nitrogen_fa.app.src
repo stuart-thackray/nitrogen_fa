@@ -1,0 +1,11 @@
+{application, nitrogen_fa,
+ [
+  {description, "Nitrogen FontAwsume app"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.
