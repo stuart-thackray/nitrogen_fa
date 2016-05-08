@@ -4,7 +4,7 @@
 -include_lib("nitrogen_core/include/wf.hrl").
 -include_lib("nitrogen_fa/include/records.hrl").
 
-main() -> #template { file="./site/templates/fa_demo.html" }.
+main() -> #template { file="./site/templates/plugins/nitrogen_fa/fa_demo.html" }.
 
 
 body() -> 
