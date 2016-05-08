@@ -19,7 +19,7 @@ render_element(Record = #fa{text = Text}) ->
 	
     case Body = Record#fa.body of
         [] -> 
-            wf_tags:emit_tag(input, [
+            wf_tags:emit_tag(i, [
                 {value, Text}
                 | UniversalAttributes
             ]);
