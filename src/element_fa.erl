@@ -10,19 +10,12 @@ reflect() -> record_info(fields, fa).
 
 
 -spec render_element(#fa{}) -> body().
-render_element(Record = #fa{text = Text}) ->
+render_element(Record = #fa{text = Text,
+							body = Body}) ->
     
     UniversalAttributes = [
     						{class, "fa fa-" ++ Record#fa.fa},
 							{"aria-hidden", "true"}
 						   ],
 	
-    case Body = Record#fa.body of
-        [] -> 
-            wf_tags:emit_tag(i, [
-                {value, Text}
-                | UniversalAttributes
-            ]);
-        _ ->
-            wf_tags:emit_tag(i, [Body, Text], UniversalAttributes)
-    end.
+	tags:emit_tag(i, [Body, Text], UniversalAttributes).
