@@ -18,4 +18,4 @@ render_element(Record = #fa{text = Text,
 							{"aria-hidden", "true"}
 						   ],
 	
-	tags:emit_tag(i, [Body, Text], UniversalAttributes).
+	wf_tags:emit_tag(i, [Body, Text], UniversalAttributes).
