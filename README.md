@@ -4,7 +4,7 @@ A quick way to include font-awesome incons into nitrogen; small record name; ass
 
 This creates a `#fa{}` element for [Nitrogen Web Framework](http://nitrogenproject.com) 
 
-## Installing into a Nitrogen Applicatio
+## Installing into a Nitrogen Application
 
 Add it as a rebar dependency by adding into the deps section of rebar.config:
 
@@ -12,7 +12,7 @@ Add it as a rebar dependency by adding into the deps section of rebar.config:
 {nitrogen_fa, "", {git, "git://github.com/stuart-thackray/nitrogen_fa.git", {branch, master}}}
 ```
 
-You need to include font awsume CSS/Fonts/etc this can either be done with the below or you can use a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network)
+You need to include font awesome CSS/Fonts/etc this can either be done with the below or you can use a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network)
 
 To include the included CSS version 4.6.2 you can include like below in your template
 ```html
