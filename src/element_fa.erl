@@ -14,7 +14,9 @@ reflect() -> record_info(fields, fa).
 render_element(_Record = #fa{text = Text,
                             body = Body,
                             class = Class0,
+                            style = Style,
                             size = Size,
+                            html_id = Htmlid,
                             fa = Icon,
                             fw = FixedWidth}) ->
    
@@ -27,7 +29,9 @@ render_element(_Record = #fa{text = Text,
 
     UniversalAttributes = [
                             {class, Class},
-                            {"aria-hidden", "true"}
+                            {"aria-hidden", "true"},
+                            {style, Style},
+                            {id, Htmlid}
                            ],
     
     wf_tags:emit_tag(i, [Body, Text], UniversalAttributes).
