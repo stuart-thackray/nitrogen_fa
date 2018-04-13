@@ -1,4 +1,4 @@
-# Nitrogen plugin for [Font Awesome](http://fontawesome.io/)
+# Nitrogen plugin for [Font Awesome](http://fontawesome.com/)
 
 A quick way to include font-awesome incons into nitrogen; small record name; assumes to add "fa fa-"; and no need to specificially state that aria hidden etc. 
 
@@ -44,7 +44,11 @@ You specify an element like below
 #fa{fa="camera-retro"}
 ```
 
-There are many additional settings such as sizes/combining with buttons; or using with bootstrap that maybe found at [Fontawesume examples](https://fortawesome.github.io/Font-Awesome/examples/)
+There are many additional settings such as sizes/combining with buttons; or using with bootstrap that maybe found at [FontAwesome examples](https://fortawesome.github.io/Font-Awesome/examples/)
+
+## List of available icons
+
+[See the list of available FontAwesome icons here.](https://fontawesome.com/icons?d=gallery)
 
 
 ## TODO
