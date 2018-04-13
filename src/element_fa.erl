@@ -1,6 +1,7 @@
+%% vim: ts=4 sw=4 et
 -module (element_fa).
 -include_lib ("nitrogen_core/include/wf.hrl").
--include_lib ("../include/records.hrl").
+-include("records.hrl").
 -export([
     reflect/0,
     render_element/1
@@ -10,12 +11,27 @@ reflect() -> record_info(fields, fa).
 
 
 -spec render_element(#fa{}) -> body().
-render_element(Record = #fa{text = Text,
-							body = Body}) ->
-    
+render_element(_Record = #fa{text = Text,
+                            body = Body,
+                            class = Class0,
+                            style = Style,
+                            size = Size,
+                            html_id = Htmlid,
+                            fa = Icon,
+                            fw = FixedWidth}) ->
+   
+    Class = [
+        "fa fa-" ++ wf:to_list(Icon),
+        ?WF_IF(Size, "fa-" ++ wf:to_list(Size)),
+        ?WF_IF(FixedWidth, "fa-fw")
+        | Class0
+    ],
+
     UniversalAttributes = [
-    						{class, "fa fa-" ++ Record#fa.fa},
-							{"aria-hidden", "true"}
-						   ],
-	
-	wf_tags:emit_tag(i, [Body, Text], UniversalAttributes).
+                            {class, Class},
+                            {"aria-hidden", "true"},
+                            {style, Style},
+                            {id, Htmlid}
+                           ],
+    
+    wf_tags:emit_tag(i, [Body, Text], UniversalAttributes).
