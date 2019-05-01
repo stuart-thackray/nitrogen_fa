@@ -21,7 +21,7 @@ render_element(_Record = #fa{text = Text,
                             fw = FixedWidth}) ->
    
     Class = [
-        "fa fa-" ++ wf:to_list(Icon),
+        "fa fas fa-" ++ wf:to_list(Icon),
         ?WF_IF(Size, "fa-" ++ wf:to_list(Size)),
         ?WF_IF(FixedWidth, "fa-fw")
         | Class0
