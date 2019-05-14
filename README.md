@@ -14,9 +14,9 @@ Add it as a rebar dependency by adding into the deps section of rebar.config:
 
 You need to include font awesome CSS/Fonts/etc this can either be done with the below or you can use a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network)
 
-To include the included CSS version 4.6.2 you can include like below in your template
+To include the included CSS version (5.8.1) you can include like below in your template
 ```html
-<link rel="stylesheet" href="/plugins/nitrogen_fa/css/font-awesome.min.css" type ="text/css" charset="utf-8" media="screen" />
+<link rel="stylesheet" href="/plugins/nitrogen_fa/css/all.min.css" type ="text/css" charset="utf-8" media="screen" />
 
 ```
 
