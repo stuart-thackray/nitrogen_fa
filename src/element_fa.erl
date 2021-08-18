@@ -17,6 +17,7 @@ render_element(_Record = #fa{text = Text,
                             style = Style,
                             size = Size,
                             html_id = Htmlid,
+                            title = Title,
                             fa = Icon,
                             fw = FixedWidth}) ->
    
@@ -31,6 +32,7 @@ render_element(_Record = #fa{text = Text,
                             {class, Class},
                             {"aria-hidden", "true"},
                             {style, Style},
+                            {title, Title},
                             {id, Htmlid}
                            ],
     
