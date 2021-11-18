@@ -8,12 +8,10 @@ main() -> #template { file="./site/templates/plugins/nitrogen_fa/fa_demo.html" }
 
 
 body() -> 
-	{A,B,C} = os:timestamp(),
-	random:seed(A, B, C),
     [
 
 	[[#panel{ style=["font-size: 24px;text-align: center;background-color: ",
-					 case random:uniform(1000) rem 2 of
+					 case rand:uniform(1000) rem 2 of
 						 0 ->
 							 "#f9f9f9;";
 						1 ->
